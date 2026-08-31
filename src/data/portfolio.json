@@ -1,0 +1,142 @@
+{
+  "personal": {
+    "name": "Sai Aniketh Reddy Papayagari",
+    "titleLine1": "I architect robust",
+    "titleLine2": "distributed systems",
+    "titleLine3": "and",
+    "titleLine4": "AI-native platforms.",
+    "intro": "I engineer highly scalable, resilient backend systems and AI-native platforms that drive startup growth. From architecting distributed cloud infrastructure to shipping production-ready products, I focus on delivering impact at scale.",
+    "currentRole": "Member of Technical Staff @ ihiring.ai",
+    "currentRoleLink": "https://ihiring.ai/",
+    "socials": {
+      "github": "https://github.com/saianikethreddyp",
+      "x": "https://x.com/anikethreddy23",
+      "linkedin": "https://linkedin.com/in/sai-aniketh-reddy",
+      "email": "mailto:saianikethreddy@gmail.com"
+    }
+  },
+  "experience": [
+    "Currently building the future of autonomous recruitment as a **Member of Technical Staff** at <a href=\"https://ihiring.ai/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"u font-semibold text-black\">ihiring.ai</a>.",
+    "Actively scaling <a href=\"https://situalabs.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"u font-semibold text-black\">SituaLabs</a>, an AI and psychology-driven technology partner. Engineering bespoke ERPs, internal portals, and high-conversion web ecosystems to solve deep business problems.",
+    "Previously at <a href=\"https://tooclarity.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"u font-semibold text-black\">TooClarity Search</a>, drove core product engineering by architecting 20+ high-throughput RESTful APIs that powered 15+ mission-critical platform features.",
+    "Scaled **FleetOps**, a multi-tenant B2B SaaS for enterprise car rentals. Engineered 50+ robust APIs and optimized AWS infrastructure, driving a 40% reduction in deployment latency and ensuring secure, high-concurrency data handling.",
+    "Led R&D for **Pay Together**, an experimental unified UPI money-pooling engine. Architected a dynamic virtual endpoint system and PostgreSQL ledger to instantly settle group bills, later halting due to strict NPCI/RBI compliance constraints.",
+    "Optimized and managed cloud infrastructure across <span class=\"font-medium\">AWS (EC2, ECR, RDS, S3)</span>, accelerating deployment cycles via automated GitHub Actions CI/CD pipelines."
+  ],
+  "skills": [
+    "React",
+    "Next.js",
+    "Node.js",
+    "AWS",
+    "MongoDB",
+    "PostgreSQL",
+    "FastAPI",
+    "Python"
+  ],
+  "education": [
+    {
+      "title": "B.Tech in Computer Science",
+      "subtitle": "CMR Technical Campus · CGPA: 7.13 · Jul 2026",
+      "isCertification": false
+    },
+    {
+      "title": "Intermediate (81.1%)",
+      "subtitle": "Sri Chaitanya Junior Kalasala · May 2022",
+      "isCertification": false
+    },
+    {
+      "title": "Google Cloud Data Analyst Track",
+      "subtitle": "Certification · Aug 2024",
+      "isCertification": true
+    },
+    {
+      "title": "Oracle Cloud Infrastructure 2025",
+      "subtitle": "Certification · Aug 2025",
+      "isCertification": true
+    }
+  ],
+  "projects": [
+    {
+      "title": "HospitalOS: Enterprise Membership ERP",
+      "description": "Built a mission-critical, full-stack ERP processing ₹2M+ in annual memberships for 2,000+ active patients. Engineered a distributed architecture with Next.js, Express, and PostgreSQL. Implemented atomic DB transactions to guarantee zero quota over-draws during concurrent bursts. Secured the platform with strict RBAC and double-submit CSRF, ensuring 99.9% uptime for hospital staff operations.",
+      "shortDescription": "— Mission-critical ERP processing memberships for 2,000+ patients. Architected with Express and PostgreSQL, featuring atomic transactions to prevent double-billing under heavy load.",
+      "link": "https://github.com/saianikethreddyp/HMS-Frontend",
+      "frontendLink": "https://github.com/saianikethreddyp/HMS-Frontend",
+      "backendLink": "https://github.com/saianikethreddyp/HMS-Backend",
+      "icon": "github",
+      "featured": false
+    },
+    {
+      "title": "CareerPrep.ai: Real-time Voice Interviewer",
+      "description": "Bootstrapped an AI-native interview SaaS powered by Gemini 2.5 Flash and Retell AI for sub-second latency voice interactions. Scaled the backend with Node.js and MongoDB to instantly generate and serve over 1,000+ highly personalized interview questions based on real-world hiring metrics.",
+      "shortDescription": "— AI-native interview SaaS using Gemini 2.5 Flash & Retell AI for sub-second voice interactions. Dynamically generated and served 1,000+ personalized questions at scale.",
+      "link": "https://github.com/saianikethreddyp/AI-Powered-Mock-Interviewer",
+      "frontendLink": "https://github.com/saianikethreddyp/AI-Powered-Mock-Interviewer",
+      "backendLink": "",
+      "icon": "github",
+      "featured": true
+    },
+    {
+      "title": "FleetOps: Enterprise Rental Management SaaS",
+      "description": "Architected a scalable, multi-tenant B2B SaaS handling end-to-end car rental operations. Engineered 50+ high-throughput RESTful APIs and 8 complex business modules on MongoDB. Optimized infrastructure on AWS Amplify, driving a 40% reduction in deployment times and ensuring enterprise-grade data security.",
+      "shortDescription": "— Multi-tenant B2B SaaS for rental operations. Engineered 50+ high-throughput APIs and 8 business modules, optimized on AWS Amplify for enterprise-grade scalability.",
+      "link": "https://github.com/saianikethreddyp/Fleet-Management-Frontend",
+      "frontendLink": "https://github.com/saianikethreddyp/Fleet-Management-Frontend",
+      "backendLink": "",
+      "icon": "github",
+      "featured": true
+    },
+    {
+      "title": "ASR Group: Lead Generation Engine",
+      "description": "Spearheaded the digital transformation for a high-growth real estate and construction firm. Built and deployed an optimized, high-conversion web platform from scratch. Drove a 3x increase in inbound leads through strategic on-page SEO, latency optimization, and targeted UX funnels.",
+      "shortDescription": "— High-conversion digital platform for a real estate firm. Optimized core web vitals and SEO to drive a 3x increase in inbound client leads.",
+      "link": "https://www.asrgroupindia.in/",
+      "frontendLink": "",
+      "backendLink": "",
+      "icon": "globe",
+      "featured": false
+    },
+    {
+      "title": "Arignya Solar: Digital Growth Platform",
+      "description": "Engineered a scalable digital presence to capture the booming solar energy market. Delivered a lightning-fast, SEO-optimized web application, set up robust Google Workspace enterprise infrastructure, and architected conversion funnels that accelerated customer acquisition.",
+      "shortDescription": "— Engineered a lightning-fast, SEO-optimized web application to capture the solar energy market, accelerating inbound customer acquisition.",
+      "link": "https://www.arignyagreenenergy.com/",
+      "frontendLink": "",
+      "backendLink": "",
+      "icon": "globe",
+      "featured": false
+    }
+  ],
+  "experiments": [
+    {
+      "slug": "situalabs",
+      "title": "SituaLabs: AI & Psychology-Driven Technology Partner",
+      "date": "Active Development",
+      "description": "Building a next-generation technology partner that goes beyond standard development. SituaLabs focuses on solving deep user problems by blending human-centric design, applied psychology, and AI-driven architecture to deliver bespoke ERPs, internal portals, and web ecosystems.",
+      "story": [
+        "**The Vision:** The current services sector is saturated with cookie-cutter websites and generic applications that look okay but fail to solve the actual underlying business problems. SituaLabs was born to change this narrative.",
+        "**Our Approach:** We don't just build 'normal' websites or apps. We act as strategic partners. By analyzing user psychology and deeply understanding the human element behind every digital interaction, we reverse-engineer the exact solution needed.",
+        "**The Technology:** Whether we are architecting massive enterprise ERPs, intuitive internal employee portals, or consumer-facing mobile apps, we integrate the latest AI capabilities directly into the core logic. We design systems that think like humans but operate with the speed and precision of machines, ensuring our clients receive a product that truly moves the needle."
+      ],
+      "link": "https://situalabs.vercel.app/",
+      "websites": [
+        "https://www.asrgroupindia.in/",
+        "https://www.arignyagreenenergy.com/"
+      ]
+    },
+    {
+      "slug": "pay-together",
+      "title": "Pay Together: Unified UPI Money Pooling",
+      "date": "Research & R&D",
+      "description": "Architected a fintech application allowing friends to create pool groups via a unified UPI. Features included seamless payment sharing, real-time group settlement, and spending analytics. Project development was successfully modeled but eventually halted due to stringent NPCI and RBI regulatory frameworks.",
+      "story": [
+        "**The Genesis:** Pay Together was born out of the universal frustration of managing group expenses manually. Whether it was splitting dinner bills, sharing rent, or funding group trips, we realized that the existing process of one person fronting the cost and painstakingly tracking down payments was broken.",
+        "**The Problem It Solves:** Traditional split-bill apps only track IOUs, leaving the actual settlement up to the users. We envisioned a radical shift: an app where friends could dynamically create a 'pool group' directly linked to a unified UPI ID. By pooling funds upfront or settling instantly via UPI, we eliminated the awkwardness of asking for money and ensured everyone paid their fair share in real-time.",
+        "**Enabling the Payment Infrastructure:** To make this a reality, we engineered a robust backend leveraging Node.js and PostgreSQL to handle complex ledger mathematics and concurrent group transactions. The core innovation was integrating with a Unified UPI API Gateway, which allowed our application to provision dynamic virtual UPI endpoints for each pool group. This meant the app could programmatically intercept incoming payments, update the group ledger in milliseconds, and securely route the final settlements—creating a truly automated, shared payment infrastructure.",
+        "**The Pivot:** Despite successfully modeling the architecture and proving out the payment flow, we eventually hit regulatory roadblocks. Stringent regulations from the National Payments Corporation of India (NPCI) and the Reserve Bank of India (RBI) surrounding pooled accounts and peer-to-peer lending without specialized licenses forced us to halt full-scale deployment."
+      ],
+      "architecture": "/architecture-diagram.jpg",
+      "figmaEmbed": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F5i2o8DTIV0EykSORgSLpdh%2FPaytogether%3Fnode-id%3D0-1%26p%3Df%26t%3D5wLLUdyb7z6MgLFf-0"
+    }
+  ]
+}
