@@ -120,8 +120,16 @@
       ],
       "link": "https://situalabs.vercel.app/",
       "websites": [
-        "https://www.asrgroupindia.in/",
-        "https://www.arignyagreenenergy.com/"
+        {
+          "name": "ASR Group India",
+          "url": "https://www.asrgroupindia.in/",
+          "description": "Enterprise platform tailored for seamless corporate operations and infrastructure management."
+        },
+        {
+          "name": "Arignya Green Energy",
+          "url": "https://www.arignyagreenenergy.com/",
+          "description": "Clean energy ecosystem driving sustainable solutions and analytics for a greener tomorrow."
+        }
       ]
     },
     {

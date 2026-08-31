@@ -74,29 +74,29 @@ export default async function ExperimentDetail({ params }: { params: Promise<{ s
             <p className="text-[var(--color-mute)] mb-6 text-[15px]">
               Explore some of the live platforms we&apos;ve engineered. You can interact with them directly below.
             </p>
-            <div className="flex flex-col gap-10">
-              {experiment.websites.map((url, index) => (
-                <div key={index} className="w-full rounded-2xl overflow-hidden shadow-xl border border-[var(--color-line)] bg-white">
-                  <div className="bg-gray-100 border-b border-[var(--color-line)] px-4 py-2 flex items-center gap-2">
-                    <div className="flex gap-1.5">
-                      <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-amber-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* @ts-expect-error Typescript dynamic websites type */}
+              {experiment.websites.map((site: any, index: number) => {
+                const url = typeof site === 'string' ? site : site.url;
+                const name = typeof site === 'string' ? url.replace('https://', '').replace(/\/$/, '') : site.name;
+                const description = typeof site === 'string' ? '' : site.description;
+
+                return (
+                  <a key={index} href={url} target="_blank" rel="noopener noreferrer" className="group flex flex-col p-6 rounded-2xl border border-[var(--color-line)] bg-black/[0.02] hover:bg-black/[0.05] transition-all hover:shadow-sm">
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="font-bold text-black text-[17px]">{name}</h3>
+                      <div className="w-8 h-8 rounded-full bg-white border border-[var(--color-line)] flex items-center justify-center text-[var(--color-mute)] group-hover:text-[var(--color-blue)] group-hover:border-[var(--color-blue)]/30 transition-colors shadow-sm">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                      </div>
                     </div>
-                    <a href={url} target="_blank" rel="noopener noreferrer" className="mx-auto bg-white border border-gray-200 text-xs text-gray-500 hover:text-black hover:border-gray-300 transition-colors rounded-md px-3 py-1 truncate max-w-[300px] flex items-center gap-1.5" title="Open in new tab">
+                    {description && <p className="text-[14px] text-[var(--color-mute)] leading-relaxed mb-4 flex-grow">{description}</p>}
+                    <div className="text-xs font-medium text-[var(--color-mute)] group-hover:text-black transition-colors mt-auto flex items-center gap-1.5 truncate">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                       {url.replace('https://', '').replace(/\/$/, '')}
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                  </div>
-                  <iframe
-                    style={{ border: "none" }}
-                    width="100%"
-                    className="h-[400px] md:h-[600px]"
-                    src={url}
-                    allowFullScreen
-                  />
-                </div>
-              ))}
+                    </div>
+                  </a>
+                );
+              })}
             </div>
           </section>
         )}
