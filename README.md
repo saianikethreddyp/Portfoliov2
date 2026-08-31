@@ -1,37 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sai Aniketh Reddy | Developer Portfolio (v2)
 
-## Getting Started
+A highly optimized, aesthetic, and fully responsive developer portfolio engineered with modern web technologies. This version is designed to act as a dynamic, data-driven showcase of engineering work, research experiments, and scalable systems architecture.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework:** [Next.js](https://nextjs.org/) (App Router, Turbopack)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+- **Architecture:** JSON-driven single source of truth for rapid content updates.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Data-Driven Architecture:** All content (skills, experience, projects, case studies) is powered by a central `src/data/portfolio.json` file. Updating the portfolio is as simple as editing a JSON object—no UI code changes required.
+- **Dynamic Case Studies:** Custom routing (`/experiments/[slug]`) automatically generates immersive, rich-text case study pages complete with interactive Figma embeds, scalable architecture diagrams, and fully responsive live client iframes.
+- **Premium Aesthetics:** Features a sleek glassmorphic UI, noise/grain textures, and fluid micro-interactions for a high-end, professional feel.
+- **Responsive by Design:** Meticulously crafted to look stunning on ultra-wide monitors, tablets, and the smallest mobile devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Local Development
 
-## Learn More
+To run this project locally on your machine:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/saianikethreddyp/Portfoliov2.git
+   cd Portfoliov2
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **View the site**
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Portfoliov2
+- `src/app/`: Core Next.js App Router layout and pages.
+- `src/data/portfolio.json`: The single source of truth for all textual and project data.
+- `src/components/`: Reusable React components.
+- `public/`: Static assets (images, architecture diagrams, SVGs).
+
+## 🤝 Let's Connect
+Feel free to reach out to me for collaboration on scalable systems or AI-native platforms!
