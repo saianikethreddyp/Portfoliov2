@@ -75,7 +75,6 @@ export default async function ExperimentDetail({ params }: { params: Promise<{ s
               Explore some of the live platforms we&apos;ve engineered. You can interact with them directly below.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* @ts-expect-error Typescript dynamic websites type */}
               {experiment.websites.map((site: any, index: number) => {
                 const url = typeof site === 'string' ? site : site.url;
                 const name = typeof site === 'string' ? url.replace('https://', '').replace(/\/$/, '') : site.name;
