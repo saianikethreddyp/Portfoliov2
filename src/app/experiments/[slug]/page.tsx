@@ -20,7 +20,6 @@ export default async function ExperimentDetail({ params }: { params: Promise<{ s
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">{experiment.title}</h1>
         <div className="mt-4 flex items-center gap-3 text-sm text-[var(--color-mute)]">
           <span className="font-medium bg-black/5 px-3 py-1 rounded-full">{experiment.date}</span>
-          {/* @ts-expect-error Typescript doesn't know about dynamic link field */}
           {experiment.link && (
             <a href={experiment.link} target="_blank" rel="noopener noreferrer" className="text-[var(--color-blue)] hover:text-black transition flex items-center gap-1 font-medium">
               Visit Live Site <span aria-hidden="true">&rarr;</span>
@@ -69,7 +68,6 @@ export default async function ExperimentDetail({ params }: { params: Promise<{ s
           </section>
         )}
 
-        {/* @ts-expect-error Typescript doesn't know about dynamic websites array */}
         {experiment.websites && experiment.websites.length > 0 && (
           <section className="mt-14">
             <h2 className="text-xl font-bold text-black mb-4">Live Client Projects</h2>
@@ -77,7 +75,6 @@ export default async function ExperimentDetail({ params }: { params: Promise<{ s
               Explore some of the live platforms we&apos;ve engineered. You can interact with them directly below.
             </p>
             <div className="flex flex-col gap-10">
-              {/* @ts-expect-error Typescript doesn't know about dynamic websites array */}
               {experiment.websites.map((url, index) => (
                 <div key={index} className="w-full rounded-2xl overflow-hidden shadow-xl border border-[var(--color-line)] bg-white">
                   <div className="bg-gray-100 border-b border-[var(--color-line)] px-4 py-2 flex items-center gap-2">
