@@ -83,9 +83,15 @@ export default async function ExperimentDetail({ params }: { params: Promise<{ s
 
                 return (
                   <a key={index} href={url} target="_blank" rel="noopener noreferrer" className="group flex flex-col p-6 rounded-2xl border border-[var(--color-line)] bg-black/[0.02] hover:bg-black/[0.05] transition-all hover:shadow-sm">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="font-bold text-black text-[17px]">{name}</h3>
-                      <div className="w-8 h-8 rounded-full bg-white border border-[var(--color-line)] flex items-center justify-center text-[var(--color-mute)] group-hover:text-[var(--color-blue)] group-hover:border-[var(--color-blue)]/30 transition-colors shadow-sm">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-white border border-[var(--color-line)] shadow-sm flex items-center justify-center overflow-hidden shrink-0">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={`https://www.google.com/s2/favicons?domain=${url}&sz=128`} alt={`${name} icon`} className="w-6 h-6 object-contain" />
+                        </div>
+                        <h3 className="font-bold text-black text-[17px] leading-tight">{name}</h3>
+                      </div>
+                      <div className="w-8 h-8 rounded-full bg-white border border-[var(--color-line)] flex items-center justify-center text-[var(--color-mute)] group-hover:text-[var(--color-blue)] group-hover:border-[var(--color-blue)]/30 transition-colors shadow-sm shrink-0">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                       </div>
                     </div>
